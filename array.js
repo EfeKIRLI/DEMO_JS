@@ -120,5 +120,20 @@ const wordsLenght = ['elma', 'armut', 'kiraz', 'muz'];
 const filteredwordsLenght = wordsLenght.filter(word => word.length === 5);
 console.log(filteredwordsLenght); // ['armut']
 
+const Nums = []
+while (Nums.length < 6) {
+    const randomNums = Math.floor(Math.random()*10); 
+    Nums.push(randomNums)
+    console.log(randomNums) //[9, 6, 3, 8, 3, 7]
+}
+
+console.log(Nums) 
+// 9
+// 6
+// 3
+// 8
+// 3
+// 7
+
 
 
