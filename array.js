@@ -137,3 +137,111 @@ console.log(Nums)
 
 
 
+// let i = 1; 
+// while (i < 2) {
+    
+//     console.log(i)
+//     i++
+// }
+
+
+let numberOfBottles = 99 
+while (numberOfBottles >=0) {
+    let bottleWord = "bottles";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottle";
+    }
+
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+	numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+
+    if (numberOfBottles === 0) {
+        console.log("No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.")
+    }
+}
+
+// const fibonacciNumbers = [];
+
+// function fibonacciGenerator() {
+//     let a = 0;
+//     let b = 1;
+
+//     for (let i = 0; i <= 20; i++) {
+//         fibonacciNumbers.push(a);
+//         const temp = a + b;
+//         a = b;
+//         b = temp;
+//     }
+// }
+
+// fibonacciGenerator();
+// console.log(fibonacciNumbers);
+
+// const n = [1,2,4,5,6]
+// const nu = n.map(ni => ni + ni-1)
+// console.log(nu)
+
+// const years = []
+// for (let i = 2000; i <= 2020; i++) {
+//     years.push(i) 
+// }
+// console.log(years)
+
+
+const ReduceNum = [2,4,6,8]
+const sumReduce = ReduceNum.reduce((acc,cur)=>{
+    return acc+cur
+})
+console.log(sumReduce)
+
+const multiplicationOperation  = ReduceNum.reduce((acc,cur)=> { 
+    return acc*cur
+})
+console.log(multiplicationOperation)
+
+const divideEven = ReduceNum.reduce((acc,cur)=> { 
+    if (cur % 2 === 0) {
+        console.log(cur)
+    }
+     
+})
+console.log(divideEven)
+
+const reducePeople = [ 
+    {name:'Dolar:',country:'ABD'},
+    {name:'Dolar:',country:'ABD'},
+    {name:'canadian dollar:',country:'Canada'},
+    {name:'canadian dollar:',country:'Canada'},
+    {name:'canadian dollar:',country:'Canada'},
+    {name:'canadian dollar:',country:'Canada'},
+    {name:'Euro:',country:'Germany'},
+    {name:'Euro:',country:'Germany'},
+    {name:'Euro:',country:'Germany'},
+    {name:'Euro:',country:'Germany'},
+    {name:'Euro:',country:'Germany'},
+    {name:'Sterlini:',country:'England'},
+    {name:'Sterlini:',country:'England'},
+    {name:'Sterlini:',country:'England'},
+    {name:'Sterlini:',country:'England'},
+    {name:'Sterlini:',country:'England'},
+    {name:'Sterlini:',country:'England'},
+    {name:'Sterlini:',country:'England'},
+    {name:'Sterlini:',country:'England'},
+];
+
+const groupedByCountry = reducePeople.reduce((grouped,countries)=> { 
+    const key = countries.country
+    // grouped[key] = grouped[key] || [];
+    // grouped[key].push(countries)
+})
+console.log(reducePeople)
+
+
+
+
+
+
+
