@@ -191,53 +191,76 @@ while (numberOfBottles >=0) {
 // console.log(years)
 
 
-const ReduceNum = [2,4,6,8]
-const sumReduce = ReduceNum.reduce((acc,cur)=>{
-    return acc+cur
-})
-console.log(sumReduce)
+// const ReduceNum = [2,4,6,8]
+// const sumReduce = ReduceNum.reduce((acc,cur)=>{
+//     return acc+cur
+// })
+// console.log(sumReduce)
 
-const multiplicationOperation  = ReduceNum.reduce((acc,cur)=> { 
-    return acc*cur
-})
-console.log(multiplicationOperation)
+// const multiplicationOperation  = ReduceNum.reduce((acc,cur)=> { 
+//     return acc*cur
+// })
+// console.log(multiplicationOperation)
 
-const divideEven = ReduceNum.reduce((acc,cur)=> { 
-    if (cur % 2 === 0) {
-        console.log(cur)
-    }
+// const divideEven = ReduceNum.reduce((acc,cur)=> { 
+//     if (cur % 2 === 0) {
+//         console.log(cur)
+//     }
      
-})
-console.log(divideEven)
+// })
+// console.log(divideEven)
 
-const reducePeople = [ 
-    {name:'Dolar:',country:'ABD'},
-    {name:'Dolar:',country:'ABD'},
-    {name:'canadian dollar:',country:'Canada'},
-    {name:'canadian dollar:',country:'Canada'},
-    {name:'canadian dollar:',country:'Canada'},
-    {name:'canadian dollar:',country:'Canada'},
-    {name:'Euro:',country:'Germany'},
-    {name:'Euro:',country:'Germany'},
-    {name:'Euro:',country:'Germany'},
-    {name:'Euro:',country:'Germany'},
-    {name:'Euro:',country:'Germany'},
-    {name:'Sterlini:',country:'England'},
-    {name:'Sterlini:',country:'England'},
-    {name:'Sterlini:',country:'England'},
-    {name:'Sterlini:',country:'England'},
-    {name:'Sterlini:',country:'England'},
-    {name:'Sterlini:',country:'England'},
-    {name:'Sterlini:',country:'England'},
-    {name:'Sterlini:',country:'England'},
-];
+// const reducePeople = [ 
+//     {name:'Dolar:',country:'ABD'},
+//     {name:'Dolar:',country:'ABD'},
+//     {name:'canadian dollar:',country:'Canada'},
+//     {name:'canadian dollar:',country:'Canada'},
+//     {name:'canadian dollar:',country:'Canada'},
+//     {name:'canadian dollar:',country:'Canada'},
+//     {name:'Euro:',country:'Germany'},
+//     {name:'Euro:',country:'Germany'},
+//     {name:'Euro:',country:'Germany'},
+//     {name:'Euro:',country:'Germany'},
+//     {name:'Euro:',country:'Germany'},
+//     {name:'Sterlini:',country:'England'},
+//     {name:'Sterlini:',country:'England'},
+//     {name:'Sterlini:',country:'England'},
+//     {name:'Sterlini:',country:'England'},
+//     {name:'Sterlini:',country:'England'},
+//     {name:'Sterlini:',country:'England'},
+//     {name:'Sterlini:',country:'England'},
+//     {name:'Sterlini:',country:'England'},
+// ];
 
-const groupedByCountry = reducePeople.reduce((grouped,countries)=> { 
-    const key = countries.country
-    // grouped[key] = grouped[key] || [];
-    // grouped[key].push(countries)
-})
-console.log(reducePeople)
+// const groupedByCountry = reducePeople.reduce((grouped,countries)=> { 
+//     const key = countries.country
+//     // grouped[key] = grouped[key] || [];
+//     // grouped[key].push(countries)
+// })
+// console.log(reducePeople)
+
+
+const values = [8, 3, 11, 6, 7];
+
+const max = values.reduce((accumulator, current) => {
+  return Math.max(accumulator, current);
+}); //, values[0]
+
+console.log(max); // Output: 11
+
+
+const people = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Charlie', age: 22 }
+  ];
+  
+  const averageAge = people.reduce((accumulator, current) => {
+    return accumulator + current.age;
+  }, 0) / people.length;
+  
+  console.log(averageAge); // Output: 25.666666666666668
+  
 
 
 
